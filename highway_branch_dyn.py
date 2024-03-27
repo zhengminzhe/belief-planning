@@ -73,7 +73,7 @@ def backup_maintain_trackV(x,cons,v0,psiref=None):
             u[1] = psiref(x[0])-cons.Kpsi*x[3]
             return u
         else:
-            return np.array([0.5*(v0-x[2]),psiref(x[0])-cons.Kpsi*x[3]])
+            return np.array([0.5*(v0-x[2]),psiref(x[0])-cons.Kpsi*x[3]],dtype=object)
 
 
 def backup_brake(x,cons,psiref=None):

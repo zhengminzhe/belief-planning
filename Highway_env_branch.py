@@ -16,7 +16,7 @@ from numpy import linalg as LA
 from numpy.linalg import norm
 from highway_branch_dyn import *
 
-v0=20
+v0=5
 f0 = np.array([v0,0,0,0])
 lane_width = 3.6
 lm = np.arange(0,7)*lane_width
